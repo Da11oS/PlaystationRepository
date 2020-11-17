@@ -9,33 +9,34 @@ aside{
 	padding:20px 20px 20px 20px; 
 }
 header{
-	background-image: url(images/header-bg- space.jpg) ;
-	background-size: 300px,100%;
+	background-image: url(images/header-bg-space.jpg) ;
+	background-size: cover;
 	background-position: center;
-	background-color: black;
 	background-repeat: no-repeat;
+	background-origin: padding-box;
 	color: white;
 	text-align: center;
 	padding: 30px 20px 14px 14px;
 	border: 0;
+	font-size: 48px;
+	font-family: DejaVu Sans Mono, monospace;
 }	
 footer{
 	background-color: #ddd;
+	background-image: url(images/footer-bg.png);
 	text-align: center;
-	padding-left: 20px;
+	padding: 30px 50px 14px 14px;
+	background-size: 100% 200px; 
 }
 nav{
 	display: flex;
-	background-color: #333;
-	justify-content: space-between;
-	align-self: baseline;
+	background-color: #6407de;
+	justify-content: center;
+	flex-direction: row;
 }
 a{
 	color: white;
-	padding-left: 12.5%;
-	padding-right: 12.5%;
-	padding-top:  20px;
-	padding-bottom: 20px;
+	padding: 20px 5% 20px 5%;
 	text-align: center;
 	text-decoration: none;
 	display: flex;
@@ -43,6 +44,7 @@ a{
 a:hover{
 	background-color: #ddd;
 	color: black;
+
 }
 section{
 	display: flex;

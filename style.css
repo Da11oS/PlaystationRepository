@@ -1,54 +1,47 @@
-@media screen and (max-width: 700px) {
-    section, nav {   
-        flex-direction: column;
-    }
-}
-aside{
-	background-color: #b2b7bf;
-	flex: 25%;
-	padding: 20px 5% 20px 5%; 
-
+img
+{
+	display: flex;
+	align-items: center;
 }
 header{
-	
-	background-image: url(images/header-bg-space.jpg) ;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	display: flex;
+	background-image: url(images/header-bg.gif) ;
+	background-repeat: repeat;
 	background-origin: padding-box;
 	color: white;
 	text-align: center;
-	padding: 30px 20px 14px 14px;
-	border: 0;
-	font-size: 48px;
+	font-size: 56px;
 	font-family: DejaVu Sans Mono, monospace;
+	align-items: center;
+
 }	
+header img
+{
+	object-fit: cover;
+}
 footer{
 	background-color: #ddd;
 	text-align: center;
-	padding: 30px 50px 14px 14px;
-	background-size: 100% 200px; 
+	margin-bottom: auto;
+	padding: 20px;
 }
-nav{
-	display: grid;
-	grid-template-columns: 10fr 3fr 3fr 3fr 3fr 3fr;
-	background-color: #064fbd;
-	position: fixed;
-	top: 0;
-	width:100%;
-	height: 80px;
-
-}
-
+ nav {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: row;
+ 	background: #3083ff;
+ }
 a{
 	color: white;
-	padding: 30px 5% 20px 5%;
+	padding: 14px 20px 14px 20px;
 	text-align: center;
 	text-decoration: none;
-	display: flex;
 }
 a:hover{
-	background-color: #0344a6;
+	background-color: #003a91;
+	color: white;
+	vertical-align: middle;
 }
 section{
 	display: flex;
@@ -56,14 +49,72 @@ section{
 }
 body
 {
-	background-image: url(images/header-bg.png);
+	background-image: url(images/body-bg.png);
 	background-repeat: repeat;
 	background-size: 1000px 1000px;
+	padding: 20px 20px 20px 20px;
+	border: 0;
+	margin: 0;
+	background-color: #3083ff;
 }
 .main{
-
 	background-color: white;
-	flex-basis: 100%;
-	padding: 25px 50px 25px 100px;
+	padding: 20px 20px 20px 20px;
+	font-size: 18px;
+	height: fit-content;
+	font-family: DejaVu Sans Mono, monospace;
+	width: 80%;
 }
 
+#mainText{
+	background-color: #3083ff;
+	width: 95%;
+	height: 50px;
+	padding: 20px 20px 0px 20px;
+}
+.diff{
+	background-color: transparent;
+		flex-basis: 20px; 
+}
+.history
+{
+	background-color: white;
+	align-items: center;
+	text-align: center;
+	position-right: 0px; 
+}
+
+ @media screen and (max-width: 900px) {
+    nav{   
+        flex-direction: column;
+    }
+    .main {
+ 		width: 90%;
+    }
+	header
+	{
+		font-size: 10pt;
+	}
+
+	section
+	{
+		 flex-direction: column;
+	}
+	header img 
+	{
+		width: 50%;
+		height: 50%;
+	}
+}
+ @media screen and (max-width: 1300px) 
+ {
+ 	header
+	{
+		font-size: 25pt;
+	}
+		header img 
+	{
+		width: 40%;
+		height: 40%;
+	}
+ }

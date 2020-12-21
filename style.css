@@ -15,15 +15,11 @@ header{
 	align-items: center;
 
 }	
-header img
-{
-	object-fit: cover;
-}
 footer{
 	background-color: #ddd;
 	text-align: center;
-	margin-bottom: auto;
 	padding: 20px;
+	margin-top: 20px;
 }
  nav {
  	display: flex;
@@ -95,26 +91,25 @@ body
 	{
 		font-size: 10pt;
 	}
-
+	.history img
+	{
+		width: 100%;
+	}
 	section
 	{
 		 flex-direction: column;
 	}
-	header img 
-	{
-		width: 50%;
-		height: 50%;
-	}
+
 }
- @media screen and (max-width: 1300px) 
+ @media screen and (max-width: 1200px) 
  {
  	header
 	{
-		font-size: 25pt;
+		font-size: 15pt;
 	}
 		header img 
 	{
-		width: 40%;
-		height: 40%;
+		width: 30%;
+		height: 30%;
 	}
  }
